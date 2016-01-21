@@ -1,0 +1,9 @@
+{
+    "name": "strava-export-gpx", 
+    "license": "MPL 2.0", 
+    "author": "(c) Eugene Ivanov, 2016", 
+    "version": "1.001", 
+    "fullName": "Export gpx-track from strava.com", 
+    "id": "strava-export-gpx@e-ivanov.ru", 
+    "description": "Export gpx-track from strava.com"
+}
