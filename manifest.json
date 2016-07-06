@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "version": "1.1.4",
+  "version": "1.1.5",
 
   "name": "Strava, export gpx track",
   	"homepage_url"	: "http://e-ivanov.ru/projects/strava-export-gpx/",
@@ -16,11 +16,14 @@
      ],
      "css": [
      ],
-     "matches": [ "https://*.strava.com/activities/*", "http://*.strava.com/activities/*" ],
+     "matches": [
+        "https://*.strava.com/*",
+        "http://*.strava.com/*"
+     ],
      "run_at": "document_end"
   } ],
   
-   	"offline_enabled" : true,
+  	"offline_enabled" : false,
 
   "permissions": [
     "https://*.strava.com/"
