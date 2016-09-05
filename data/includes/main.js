@@ -5,7 +5,8 @@
 jQuery(function() {
     var $ = jQuery;
 
-    setTimeout(function() {
+	var ignition = function() {
+	    //console.log('ignition');
 
     	var base_url = 'https://www.strava.com';
 
@@ -26,7 +27,7 @@ jQuery(function() {
     			href = ' href="'+base_url+'/routes/'+id+'/export_gpx'+'" ';
     		}
 
-    		var button = $('<a'+href+'class="button" id="gpx-export" title="GPX export via extension">GPX export</a>');
+    		var button = $('<a'+href+'class="button'+(type == 'segments' ? ' drop-down-menu' : '')+'" id="gpx-export" title="GPX export via extension">GPX export</a>');
     		button.insertBefore(gd);
 
     		/*
@@ -197,7 +198,22 @@ jQuery(function() {
 
             this.$.ajax(ajaxData);
         };
-    }, 500);
+    };
+
+
+	var check = function() {
+		//console.log('check');
+
+	    var gd = $('#map-type-control');
+	    if (gd.length) {
+		    return setTimeout(ignition, 500);
+	    }
+
+
+	    setTimeout(check, 500);
+	};
+
+    setTimeout(check, 500);
 
 
 
