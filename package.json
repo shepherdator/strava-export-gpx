@@ -1,12 +1,9 @@
 {
     "name": "strava-export-gpx", 
     "license": "MPL 2.0", 
-    "engines": {
-        "firefox": ">=43.0a1"
-    },
-
     "author": "(c) Eugene Ivanov, 2016, http://e-ivanov.ru/projects/strava-export-gpx/", 
-    "version": "1.1.6", 
+    "version": "1.1.7", 
+    "main": "lib/main.js",
     "fullName": "Export gpx-track from strava.com", 
     "id": "strava-export-gpx@e-ivanov.ru", 
     "description": "Export gpx-track from strava.com"
